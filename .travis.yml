@@ -3,5 +3,7 @@ node_js:
     - node
 script:
   - mocha --exit
+  - npm install
+  - npm test
 services:
   - mongodb

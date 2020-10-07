@@ -3,6 +3,6 @@ node_js:
     - node
 script:
   - npm install
-  - npm test --exit
+  - npm test
 services:
   - mongodb

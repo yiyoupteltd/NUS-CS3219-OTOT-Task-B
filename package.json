@@ -1,0 +1,31 @@
+{
+  "name": "otot",
+  "version": "1.0.0",
+  "description": "An app demonstrating simple Restful API implementation",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha 'test/**/*.js' --timeout 10000"
+  },
+  "keywords": [
+    "api",
+    "restful",
+    "json"
+  ],
+  "author": "Chia Yi You",
+  "license": "ISC",
+  "dependencies": {
+    "aws-serverless-express": "^3.3.8",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  },
+  "engines": {
+    "node": "12.18.4"
+  },
+  "devDependencies": {
+    "mocha": "^8.1.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0"
+  }
+}

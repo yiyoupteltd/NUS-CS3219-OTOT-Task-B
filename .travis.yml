@@ -6,3 +6,11 @@ script:
   - npm test
 services:
   - mongodb
+
+deploy:
+  provider: lambda
+  function_name: "otot-dev-api"
+  region: "us-east-2"
+  role: "arn:aws:iam::0123456789012:role/lambda_basic_execution"
+  runtime: "nodejs12.x"
+  handler_name: "handler"
